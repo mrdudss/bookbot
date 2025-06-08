@@ -20,7 +20,12 @@ def count_characters(text):
             else:
                 char_lib[low_let] = 1
     return char_lib
-
-
-
+def sort(d):
+    return d["num"]
+def sorted_list(dict):
+    list = []
+    for letter in dict:
+        list.append({"char": letter,"num": dict[letter]})
+    list.sort(reverse=True, key=sort)
+    return list
 
